@@ -4,31 +4,31 @@ namespace CalculatorV2
 {
     class Calculator
     {
-        public Calculator(int a, int b)
+        public Calculator(double a, double b)
         {
 
         }
 
-        public int Add(int a, int b)
+        public double Add(double a, double b)
         {
             return a + b;
         }
 
-        public int Subtract(int a, int b)
+        public double Subtract(double a, double b)
         {
             return a - b;
         }
 
-        public int Multiply(int a, int b)
+        public double Multiply(double a, double b)
         {
             return a * b;
         }
 
-        public int Divide(int a, int b)
+        public double Divide(double a, double b)
         {
             try
             {
-                int c = a / b;
+                double c = a / b;
             }
             catch(DivideByZeroException ex)
             {
@@ -39,29 +39,29 @@ namespace CalculatorV2
             
         }
 
-        public int Square(int a)
+        public double Square(double a)
         {
-            return Convert.ToInt32(Math.Pow(a, 2));
+            return Convert.ToDouble(Math.Pow(a, 2));
         }
 
-        public int Squareroot(int a)
+        public double Squareroot(double a)
         {
-            return Convert.ToInt32(Math.Sqrt(a));
+            return Convert.ToDouble(Math.Sqrt(a));
         }
 
-        public int Cube(int a)
+        public double Cube(double a)
         {
-            return Convert.ToInt32(Math.Pow(a, 3));
+            return Convert.ToDouble(Math.Pow(a, 3));
         }
 
-        public int Cuberoot(int a)
+        public double Cuberoot(double a)
         {
-            return Convert.ToInt32(Math.Cbrt(a));
+            return Convert.ToDouble(Math.Cbrt(a));
         }
 
-        public int Log10(int a)
+        public double Log10(double a)
         {
-            return Convert.ToInt32(Math.Log10(a));
+            return Convert.ToDouble(Math.Log10(a));
         }
     }
     
@@ -81,17 +81,17 @@ namespace CalculatorV2
             Console.WriteLine("8.Cuberoot");
             Console.WriteLine("9.log10");
             Console.WriteLine("Enter Choice(1-9):");
-            int a, b, c;
+            double a, b, c;
             
 
-            int ch = Int32.Parse(Console.ReadLine());
+            double ch = Double.Parse(Console.ReadLine());
             switch (ch)
             {
                 case 1:
                     Console.Write("Enter a:");
-                    a = Convert.ToInt32(Console.ReadLine());
+                    a = Convert.ToDouble(Console.ReadLine());
                     Console.Write("Enter b:");
-                    b = Convert.ToInt32(Console.ReadLine());
+                    b = Convert.ToDouble(Console.ReadLine());
 
                     Calculator Calc = new Calculator(a, b);
                     c = Calc.Add(a, b);
@@ -99,9 +99,9 @@ namespace CalculatorV2
                     break;
                 case 2:
                     Console.Write("Enter a:");
-                    a = Convert.ToInt32(Console.ReadLine());
+                    a = Convert.ToDouble(Console.ReadLine());
                     Console.Write("Enter b:");
-                    b = Convert.ToInt32(Console.ReadLine());
+                    b = Convert.ToDouble(Console.ReadLine());
 
                     Calculator Calc2 = new Calculator(a, b);
                     c = Calc2.Subtract(a, b);
@@ -109,9 +109,9 @@ namespace CalculatorV2
                     break;
                 case 3:
                     Console.Write("Enter a:");
-                    a = Convert.ToInt32(Console.ReadLine());
+                    a = Convert.ToDouble(Console.ReadLine());
                     Console.Write("Enter b:");
-                    b = Convert.ToInt32(Console.ReadLine());
+                    b = Convert.ToDouble(Console.ReadLine());
 
                     Calculator Calc3 = new Calculator(a, b);
                     c = Calc3.Multiply(a, b);
@@ -119,9 +119,9 @@ namespace CalculatorV2
                     break;
                 case 4:
                     Console.Write("Enter a:");
-                    a = Convert.ToInt32(Console.ReadLine());
+                    a = Convert.ToDouble(Console.ReadLine());
                     Console.Write("Enter b:");
-                    b = Convert.ToInt32(Console.ReadLine());
+                    b = Convert.ToDouble(Console.ReadLine());
 
                     Calculator Calc4 = new Calculator(a, b);
                     c = Calc4.Divide(a, b);
@@ -129,7 +129,7 @@ namespace CalculatorV2
                     break;
                 case 5:
                     Console.Write("Enter a:");
-                    a = Convert.ToInt32(Console.ReadLine());
+                    a = Convert.ToDouble(Console.ReadLine());
                     b = 0;
                     Calculator Calc5 = new Calculator(a, b);
                     c = Calc5.Square(a);
@@ -137,7 +137,7 @@ namespace CalculatorV2
                     break;
                 case 6:
                     Console.Write("Enter a:");
-                    a = Convert.ToInt32(Console.ReadLine());
+                    a = Convert.ToDouble(Console.ReadLine());
                     b = 0; 
 
                     Calculator Calc6 = new Calculator(a, b);
@@ -146,7 +146,7 @@ namespace CalculatorV2
                     break;
                 case 7:
                     Console.Write("Enter a:");
-                    a = Convert.ToInt32(Console.ReadLine());
+                    a = Convert.ToDouble(Console.ReadLine());
                     b = 0;
 
                     Calculator Calc7 = new Calculator(a, b);
@@ -155,7 +155,7 @@ namespace CalculatorV2
                     break;
                 case 8:
                     Console.Write("Enter a:");
-                    a = Convert.ToInt32(Console.ReadLine());
+                    a = Convert.ToDouble(Console.ReadLine());
                     b = 0;
 
                     Calculator Calc8 = new Calculator(a, b);
@@ -164,7 +164,7 @@ namespace CalculatorV2
                     break;
                 case 9:
                     Console.Write("Enter a:");
-                    a = Convert.ToInt32(Console.ReadLine());
+                    a = Convert.ToDouble(Console.ReadLine());
                     b = 0;
 
                     Calculator Calc9 = new Calculator(a, b);
